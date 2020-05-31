@@ -85,7 +85,7 @@ class MyHTMLParser(HTMLParser):
             if tag =="i":
                 self.is_taken=True
 
-gm = Gmail('sjurpython@gmail.com', 'JegHarEnStorPikkOhyeyoloswag2')
+gm = Gmail('sjurpython@gmail.com', '')
 parser = MyHTMLParser(gm)
 response = requests.get(url)
 parser.feed(response.text)
